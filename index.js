@@ -12,22 +12,8 @@ const findRule = (rulesSource, ruleMatcher) => {
     return rules[index];
 }
 
-const addAfterRule = (rulesSource, ruleMatcher, value) => {
-    const {index, rules} = findIndexAndRules(rulesSource, ruleMatcher);
-    rules.splice(index + 1, 0, value);
-}
-
-const addBeforeRule = (rulesSource, ruleMatcher, value) => {
-    const {index, rules} = findIndexAndRules(rulesSource, ruleMatcher);
-    rules.splice(index, 0, value);
-}
-
-const cssRuleMatcher = (rule) => rule.test && String(rule.test) === String(/\.css$/);
-
 const createLoaderMatcher = (loader) => (rule) => rule.loader && rule.loader.indexOf(`/${loader}/`) !== -1;
-const cssLoaderMatcher = createLoaderMatcher('css-loader');
 const postcssLoaderMatcher = createLoaderMatcher('postcss-loader');
-const fileLoaderMatcher = createLoaderMatcher('file-loader');
 
 module.exports = function (config, env) {
   // Add CSSnext plugins
