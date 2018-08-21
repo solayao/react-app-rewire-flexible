@@ -1,0 +1,31 @@
+{
+    "name": "react-app-rewire-flexible",
+    "version": "1.0.0",
+    "description": "Add the lib-flexible plugin to your create-react-app via react-app-rewired",
+    "main": "index.js",
+    "files": [
+      "index.js"
+    ],
+    "repository": {
+      "type": "git"
+    },
+    "keywords": [
+      "webpack",
+      "react-app-rewired",
+      "create-react-app",
+      "postcss",
+      "postcss-cssnext",
+      "cssnext",
+      "css"
+    ],
+    "author": "dizzyL",
+    "license": "MIT",
+    "dependencies": {
+      "postcss-cssnext": "^3.0.2",
+      "postcss-import": "^11.0.0",
+      "postcss-url": "^7.3.0"
+    },
+    "peerDependencies": {
+      "postcss": "^6.0.9"
+    }
+  }
