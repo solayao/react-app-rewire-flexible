@@ -1,31 +1,36 @@
 {
-    "name": "react-app-rewire-flexible",
-    "version": "0.0.1",
-    "description": "Add the lib-flexible plugin to your create-react-app via react-app-rewired",
-    "main": "index.js",
-    "files": [
-      "index.js"
-    ],
-    "repository": {
-      "type": "git"
-    },
-    "keywords": [
-      "webpack",
-      "react-app-rewired",
-      "create-react-app",
-      "postcss",
-      "postcss-cssnext",
-      "cssnext",
-      "css"
-    ],
-    "author": "dizzyL",
-    "license": "MIT",
-    "dependencies": {
-      "postcss-cssnext": "^3.0.2",
-      "postcss-import": "^11.0.0",
-      "postcss-url": "^7.3.0"
-    },
-    "peerDependencies": {
-      "postcss": "^6.0.9"
-    }
+  "name": "react-app-rewire-flexible",
+  "version": "0.0.1",
+  "description": "Add the lib-flexible plugin to your create-react-app via react-app-rewired",
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "webpack",
+    "react-app-rewired",
+    "create-react-app",
+    "postcss",
+    "postcss-cssnext",
+    "cssnext",
+    "css"
+  ],
+  "author": "dizzyL",
+  "license": "MIT",
+  "dependencies": {
+    "cssnano": "^4.0.5",
+    "postcss-aspect-ratio-mini": "0.0.2",
+    "postcss-cssnext": "^3.1.0",
+    "postcss-import": "^11.0.0",
+    "postcss-px-to-viewport": "0.0.3",
+    "postcss-url": "^7.3.0",
+    "postcss-viewport-units": "^0.1.4",
+    "postcss-write-svg": "^3.0.1"
+  },
+  "peerDependencies": {
+    "postcss": "^6.0.9"
   }
+}
