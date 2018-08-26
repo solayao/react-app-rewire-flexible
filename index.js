@@ -51,7 +51,9 @@ module.exports = function (config, env, viewportWidth = 750, viewportHeight = 13
     require('postcss-write-svg')({
       utf8: false
     }),
-    require('postcss-viewport-units')({}),
+    require('postcss-viewport-units')({
+      filterRule: rule => rule.selector.indexOf('::after') === -1 && rule.selector.indexOf('::before') === -1 && rule.selector.indexOf(':after') === -1 && rule.selector.indexOf(':before') === -1,
+    }),
     require('cssnano')({
       preset: "advanced", 
       autoprefixer: false, 
