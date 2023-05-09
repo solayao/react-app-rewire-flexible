@@ -21,8 +21,8 @@
   "author": "dizzyL",
   "license": "MIT",
   "dependencies": {
-    "cssnano": "^4.0.5",
-    "cssnano-preset-advanced": "^4.0.0",
+    "cssnano": "^6.0.1",
+    "cssnano-preset-advanced": "^6.0.1",
     "postcss-aspect-ratio-mini": "0.0.2",
     "postcss-cssnext": "^3.1.0",
     "postcss-import": "^11.0.0",
